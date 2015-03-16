@@ -6,6 +6,7 @@
 package examencodtwitter;
 
 import javax.swing.JOptionPane;
+import twitter4j.TwitterException;
 
 /**
  *
@@ -15,9 +16,11 @@ public class Main {
 
     /**
      * @param args the command line arguments
+     * @throws twitter4j.TwitterException
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws TwitterException {
         // TODO code application logic here
+        
         MetodosTwitter twit = new MetodosTwitter();
         int op;
         do {
